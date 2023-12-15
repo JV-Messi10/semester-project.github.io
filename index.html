@@ -122,8 +122,15 @@ a:hover, a:active {
 
 <hr>
   <center>
+    
     <div class="action-btns">
-  <button class="btn play" type="button" onclick="sound(file_boom.mp3)">
+
+<audio id="myAudio">
+  <source src="boom.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+  <button class="btn play" type="button" onclick="sound("boom.mp3")">
     Deploy Nuke
   </button>
 
@@ -143,6 +150,18 @@ a:hover, a:active {
 </font size='5'>
 
   </center>
-    
+
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+  
 </body>
 </html>
