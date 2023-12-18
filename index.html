@@ -126,6 +126,7 @@ a:hover, a:active {
 
 <audio id="myAudio">
   <source src="boom.mp3" type="audio/mpeg">
+  <source src="horse.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
@@ -153,11 +154,11 @@ a:hover, a:active {
 <script>
 var x = document.getElementById("myAudio"); 
 
-function playAudio("/boom.mp3") { 
+function playAudio() { 
   x.play(); 
 } 
 
-function pauseAudio("/boom.mp3") { 
+function pauseAudio() { 
   x.pause(); 
 } 
 </script>
